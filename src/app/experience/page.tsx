@@ -4,7 +4,7 @@ import { personal } from "@/data/personal";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: `A timeline of ${personal.name}'s professional roles, responsibilities, and the tech stack behind each.`,
+  description: `A snapshot of ${personal.name}'s professional role, key achievements, and the tech stack behind the work.`,
 };
 
 export default function ExperiencePage() {
