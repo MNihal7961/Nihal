@@ -1,14 +1,14 @@
 import type { NavLink } from "@/types";
 
 export const siteConfig = {
-  name: "Nihal — Full Stack Software Engineer",
-  title: "Nihal | Full Stack Software Engineer",
+  name: "M Nihal — Full Stack Software Engineer",
+  title: "M Nihal | Full Stack Software Engineer",
   description:
-    "Portfolio of Nihal, a Full Stack Software Engineer based in Bangalore, India, specializing in React, Next.js, Node.js, and NestJS applications.",
-  url: "https://nihal.dev",
+    "Portfolio of M Nihal, a Full Stack Software Engineer based in Bangalore, India, specializing in React, Next.js, Node.js, and NestJS applications.",
+  url: "https://nihalm.vercel.app",
   ogImage: "/og-image.png",
   keywords: [
-    "Nihal",
+    "M Nihal",
     "Full Stack Software Engineer",
     "React Developer",
     "Next.js Developer",
