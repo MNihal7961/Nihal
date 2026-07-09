@@ -5,15 +5,15 @@ import { personal } from "@/data/personal";
 export const socials: SocialLink[] = [
   {
     name: "GitHub",
-    href: "https://github.com/nihal",
+    href: "https://github.com/MNihal7961",
     icon: Github,
-    username: "@nihal",
+    username: "github.com/MNihal7961",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/nihal",
+    href: "https://linkedin.com/in/your-profile",
     icon: Linkedin,
-    username: "in/nihal",
+    username: "linkedin.com/in/your-profile",
   },
   {
     name: "Email",

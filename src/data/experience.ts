@@ -1,26 +1,45 @@
 import type { ExperienceItem } from "@/types";
+import { personal } from "@/data/personal";
 
 export const experience: ExperienceItem[] = [
   {
     id: "avadhuta-technologies",
-    company: "Avadhuta Technologies Private Limited",
-    role: "Full Stack Software Engineer",
+    company: "Avadhuta Technologies Pvt. Ltd.",
+    role: "Full Stack Engineer",
     duration: "Jun 2024 — Present",
     location: "Bangalore, India",
     current: true,
-    responsibilities: [
-      "Developed and maintained full-stack web applications using React, Next.js, TypeScript, Node.js, and NestJS for clients across multiple domains.",
-      "Built and enhanced AI-powered recruitment and hiring platforms, including candidate management, interview scheduling, evaluation workflows, and admin dashboards.",
-      "Designed scalable REST APIs and backend services using NestJS, TypeORM, MongoDB, and PostgreSQL with a focus on maintainability and performance.",
-      "Implemented subscription management, gift redemption systems, and payment gateway integrations including Paddle and Razorpay.",
-      "Created responsive and accessible user interfaces using Tailwind CSS, Ant Design, and modern frontend development practices.",
-      "Developed workflow automation solutions using N8N, reducing manual processes and improving operational efficiency.",
-      "Managed application deployments on AWS EC2 using Docker, environment-based configurations, and production deployment workflows.",
-      "Collaborated closely with designers, product managers, and stakeholders to deliver high-quality software solutions in agile development environments.",
-      "Participated in code reviews, bug fixing, performance optimization, and continuous improvement of existing applications.",
+
+    summary:
+      "Owning features end-to-end — from database design to production deployment — across AI-driven hiring platforms, automation tools, and SaaS products.",
+
+    metrics: [
+      { value: personal.experienceYears.split(" ")[0], label: "Years Experience" },
+      { value: "Multiple", label: "Production Apps" },
+      { value: "SaaS", label: "Products Built" },
+      { value: "AI", label: "Platform Experience" },
     ],
+
+    achievements: [
+      "Built AI-powered hiring platforms",
+      "Developed subscription & payment systems",
+      "Created workflow automation using N8N",
+      "Designed scalable backend APIs",
+      "Delivered responsive production-ready UIs",
+      "Deployed applications on AWS using Docker",
+    ],
+
+    domains: [
+      "AI Recruitment Platforms",
+      "Workflow Automation Systems",
+      "Subscription Platforms",
+      "Payment Integrations",
+      "Admin Dashboards",
+      "SaaS Applications",
+    ],
+
     techStack: [
-      "React.js",
+      "React",
       "Next.js",
       "TypeScript",
       "JavaScript",
@@ -35,7 +54,7 @@ export const experience: ExperienceItem[] = [
       "Ant Design",
       "Redux Toolkit",
       "Docker",
-      "AWS EC2",
+      "AWS",
       "N8N",
       "Git",
       "GitHub",

@@ -1,44 +1,96 @@
-import { Layers, Rocket, Sparkles, Gauge } from "lucide-react";
+import { Rocket, Code2, Zap, MapPin, TrendingUp, Blocks } from "lucide-react";
 import type { Personal } from "@/types";
 
+const experienceYears = "2+ Years";
+
 export const personal: Personal = {
-  name: "Nihal",
-  initials: "N",
-  role: "Full Stack Software Engineer",
-  tagline: "Full Stack Software Engineer, Bangalore, India",
-  headline: "Building Scalable Full-Stack Applications with Modern Web Technologies",
+  name: "M Nihal",
+  initials: "MN",
+  role: "Full Stack Engineer",
+  tagline:
+    "Building scalable web applications, SaaS platforms, AI-powered systems, and automation solutions.",
+  headline: "Building Modern SaaS Products, AI Platforms & Scalable Web Applications.",
   summary:
-    "Passionate Full Stack Software Engineer specializing in building scalable web applications using modern JavaScript technologies. I design and ship end-to-end products with React, Next.js, Node.js, and NestJS, deployed on cloud infrastructure.",
+    "I design and develop production-ready software using React, Next.js, TypeScript, NestJS, and cloud technologies.",
+
   bio: [
-    "I'm a Full Stack Software Engineer with 1+ years of experience building production web applications end to end — from database schema to pixel-perfect UI. I work primarily across the React/Next.js and Node.js/NestJS ecosystem, with a strong focus on clean architecture and maintainable code.",
-    "My work spans AI-powered hiring platforms, subscription and payment systems, gift redemption platforms, admin dashboards, workflow automation tools, and SaaS products. I care about performance, accessibility, and building interfaces that feel effortless to use.",
-    "Outside of feature work, I enjoy optimizing developer experience — clean folder structures, reusable components, and typed APIs that make teams move faster with fewer bugs.",
+    "I build modern web applications using React, Next.js, TypeScript, Node.js, and NestJS.",
+    "Over the last year, I've worked on AI-powered hiring platforms, workflow automation systems, payment integrations, and SaaS products used in production environments.",
+    "My focus is creating software that is scalable, maintainable, and enjoyable to use.",
   ],
+
   location: "Bangalore, India",
-  experienceYears: "1+ Years",
-  email: "nihal@avadhutatech.com",
+  experienceYears,
+
+  email: "mnihal7961@gmail.com",
+
   avatarUrl: "/profile.jpg",
-  resumeUrl: "/resume/nihal-resume.pdf",
-  highlights: [
+
+  resumeUrl: "/resume/M-Nihal-Resume.pdf",
+
+  techStackPreview: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "NestJS",
+    "MongoDB",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+  ],
+
+  availabilityStatus: "Available for opportunities",
+
+  credibilityPills: [
+    "Full Stack Engineer",
+    `${experienceYears} Experience`,
+    "Production Applications",
+    "SaaS Products",
+    "AI Platforms",
+    "Workflow Automation",
+  ],
+
+  stats: [
     {
-      title: "End-to-End Ownership",
-      description: "From database design to deployment, I build and ship complete features independently.",
-      icon: Layers,
-    },
-    {
-      title: "Performance Focused",
-      description: "Optimized rendering, queries, and bundle sizes for fast, responsive experiences.",
-      icon: Gauge,
-    },
-    {
-      title: "Modern Stack",
-      description: "React, Next.js, NestJS, and cloud-native deployments as daily tools of the trade.",
-      icon: Sparkles,
-    },
-    {
-      title: "Product Mindset",
-      description: "I build with the end user and business outcome in mind, not just the ticket.",
       icon: Rocket,
+      label: "Current Role",
+      value: "Full Stack Engineer",
+      meta: "Avadhuta Technologies",
     },
+    {
+      icon: Code2,
+      label: "Core Stack",
+      value: "React • Next.js • NestJS • TypeScript",
+    },
+    {
+      icon: Zap,
+      label: "Focus Areas",
+      value: "SaaS • AI Platforms • Automation",
+    },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Bangalore, India",
+    },
+    {
+      icon: TrendingUp,
+      label: "Experience",
+      value: experienceYears,
+      meta: "Professional Experience",
+    },
+    {
+      icon: Blocks,
+      label: "Projects",
+      value: "Multiple",
+      meta: "Production Applications",
+    },
+  ],
+
+  quickFacts: [
+    "Full Stack Engineer",
+    "Based in Bangalore",
+    `${experienceYears} Experience`,
+    "MERN + Next.js Specialist",
+    "Building Production SaaS Products",
   ],
 };
