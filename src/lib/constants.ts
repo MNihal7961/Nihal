@@ -10,10 +10,12 @@ export const siteConfig = {
   keywords: [
     "M Nihal",
     "Full Stack Software Engineer",
+    "Software Engineer",
     "React Developer",
     "Next.js Developer",
     "Node.js Developer",
     "NestJS",
+    "MERN Stack Developer",
     "TypeScript Developer",
     "Bangalore Software Engineer",
   ],
