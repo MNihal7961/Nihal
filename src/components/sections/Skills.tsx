@@ -33,7 +33,7 @@ export function Skills() {
             >
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-slate-700">
-                  <category.icon className="h-[18px] w-[18px]" strokeWidth={1.75} />
+                  <category.icon className="h-4.5 w-4.5" strokeWidth={1.75} />
                 </div>
                 <h3 className="text-sm font-semibold text-slate-900">{category.category}</h3>
               </div>

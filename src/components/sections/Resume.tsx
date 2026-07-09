@@ -2,7 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Download, ExternalLink, FileText, FileWarning, Loader2 } from "lucide-react";
+import {
+  Download,
+  ExternalLink,
+  FileText,
+  FileWarning,
+  Loader2,
+} from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -47,7 +53,7 @@ export function Resume() {
           className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]"
         >
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm shadow-slate-100">
-            <div className="aspect-[3/4] w-full sm:aspect-[4/5] lg:aspect-[3/4]">
+            <div className="aspect-3/4 w-full sm:aspect-4/5 lg:aspect-3/4">
               {status === "checking" && (
                 <div className="flex h-full w-full flex-col items-center justify-center gap-3 text-slate-400">
                   <Loader2 className="h-6 w-6 animate-spin" />
@@ -69,7 +75,9 @@ export function Resume() {
                     <FileWarning className="h-6 w-6" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-slate-700">Resume preview unavailable</p>
+                    <p className="text-sm font-medium text-slate-700">
+                      Resume preview unavailable
+                    </p>
                     <p className="mt-1 max-w-xs text-sm text-slate-500">
                       Add a PDF at{" "}
                       <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600">

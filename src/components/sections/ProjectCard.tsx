@@ -19,7 +19,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       transition={{ type: "spring", stiffness: 300, damping: 24 }}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm shadow-slate-100 transition-shadow hover:shadow-lg hover:shadow-slate-200/70"
     >
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
+      <div className="relative aspect-16/10 w-full overflow-hidden bg-slate-100">
         <ImageWithFallback
           src={project.image}
           alt={project.title}

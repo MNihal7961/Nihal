@@ -12,8 +12,8 @@ import { fadeUp, staggerContainer } from "@/lib/motion";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-white pt-32 pb-20 sm:pt-40 sm:pb-28">
-      <div className="bg-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
-      <div className="absolute left-1/2 top-[-10rem] -z-10 h-[28rem] w-[36rem] -translate-x-1/2 rounded-full bg-linear-to-br from-slate-200/60 via-slate-100/40 to-transparent blur-3xl" />
+      <div className="bg-grid absolute inset-0 -z-10 mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
+      <div className="absolute left-1/2 -top-40 -z-10 h-md w-xl -translate-x-1/2 rounded-full bg-linear-to-br from-slate-200/60 via-slate-100/40 to-transparent blur-3xl" />
 
       <Container>
         <motion.div
@@ -81,16 +81,16 @@ export function Hero() {
                   aria-label={social.name}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-900 hover:shadow-sm"
                 >
-                  <social.icon className="h-[18px] w-[18px]" strokeWidth={1.75} />
+                  <social.icon className="h-4.5 w-4.5" strokeWidth={1.75} />
                 </a>
               ))}
             </motion.div>
           </div>
 
           <motion.div variants={fadeUp} className="relative mx-auto w-full max-w-sm lg:max-w-none">
-            <div className="relative aspect-square w-full max-w-[22rem] mx-auto">
-              <div className="absolute -inset-4 rounded-[2rem] bg-linear-to-br from-slate-100 to-slate-50 blur-xl" />
-              <div className="relative h-full w-full overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 shadow-xl shadow-slate-200/50">
+            <div className="relative aspect-square w-full max-w-88 mx-auto">
+              <div className="absolute -inset-4 rounded-4xl bg-linear-to-br from-slate-100 to-slate-50 blur-xl" />
+              <div className="relative h-full w-full overflow-hidden rounded-4xl border border-slate-200 bg-slate-50 shadow-xl shadow-slate-200/50">
                 <ImageWithFallback
                   src={personal.avatarUrl}
                   alt={personal.name}

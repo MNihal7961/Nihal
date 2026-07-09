@@ -21,7 +21,7 @@ export function Experience() {
         <div className="relative mt-14">
           <div
             aria-hidden
-            className="absolute left-[19px] top-2 bottom-2 w-px bg-slate-200 sm:left-[23px]"
+            className="absolute left-4.75 top-2 bottom-2 w-px bg-slate-200 sm:left-5.75"
           />
 
           <div className="space-y-10">
@@ -35,8 +35,8 @@ export function Experience() {
                 transition={{ delay: index * 0.05 }}
                 className="relative flex gap-6 pl-0 sm:gap-8"
               >
-                <div className="relative z-10 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm sm:h-12 sm:w-12">
-                  <Briefcase className="h-[18px] w-[18px] text-slate-700" strokeWidth={1.75} />
+                <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm sm:h-12 sm:w-12">
+                  <Briefcase className="h-4.5 w-4.5 text-slate-700" strokeWidth={1.75} />
                 </div>
 
                 <div className="flex-1 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-100">
@@ -55,7 +55,7 @@ export function Experience() {
                   <ul className="mt-4 space-y-2">
                     {item.responsibilities.map((responsibility, i) => (
                       <li key={i} className="flex gap-2.5 text-sm leading-relaxed text-slate-600">
-                        <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
+                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate-400" />
                         {responsibility}
                       </li>
                     ))}
