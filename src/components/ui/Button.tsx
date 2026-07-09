@@ -64,7 +64,7 @@ export function Button(props: ButtonProps) {
         <MotionLink
           href={props.href}
           className={classes}
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
         >
@@ -79,7 +79,7 @@ export function Button(props: ButtonProps) {
         target={props.target}
         rel={props.rel}
         className={classes}
-        whileHover={{ scale: 1.02 }}
+        whileHover={{ scale: 1.02, y: -2 }}
         whileTap={{ scale: 0.98 }}
         transition={{ type: "spring", stiffness: 400, damping: 25 }}
       >
@@ -95,7 +95,7 @@ export function Button(props: ButtonProps) {
       type={buttonProps.type ?? "button"}
       onClick={buttonProps.onClick}
       className={classes}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.02, y: -2 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 400, damping: 25 }}
     >
