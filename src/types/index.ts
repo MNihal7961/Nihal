@@ -1,14 +1,16 @@
 import type { LucideIcon } from "lucide-react";
+import type { IconType } from "react-icons";
 
 export interface NavLink {
   label: string;
   href: string;
 }
 
-export interface Highlight {
-  title: string;
-  description: string;
+export interface Stat {
   icon: LucideIcon;
+  label: string;
+  value: string;
+  meta?: string;
 }
 
 export interface Personal {
@@ -24,17 +26,31 @@ export interface Personal {
   email: string;
   avatarUrl: string;
   resumeUrl: string;
-  highlights: Highlight[];
+  stats: Stat[];
+  quickFacts: string[];
+  techStackPreview: string[];
+  availabilityStatus: string;
+  credibilityPills: string[];
 }
 
 export interface SkillItem {
   name: string;
+  icon: IconType;
+  color: string;
+  description: string;
+  usage: string;
 }
 
 export interface SkillCategory {
   category: string;
   icon: LucideIcon;
+  color: string;
   skills: SkillItem[];
+}
+
+export interface Metric {
+  value: string;
+  label: string;
 }
 
 export interface ExperienceItem {
@@ -44,9 +60,15 @@ export interface ExperienceItem {
   duration: string;
   location: string;
   current?: boolean;
-  responsibilities: string[];
+  summary: string;
+  metrics: Metric[];
+  achievements: string[];
+  domains: string[];
   techStack: string[];
 }
+
+export type ProjectTier = "hero" | "featured" | "other";
+export type ProjectStatus = "Production" | "Completed" | "Active Development";
 
 export interface Project {
   id: string;
@@ -54,10 +76,14 @@ export interface Project {
   description: string;
   image: string;
   category: string;
+  type: string;
+  status: ProjectStatus;
+  tier: ProjectTier;
   technologies: string[];
+  impactHighlights?: string[];
+  keyResult?: string;
   githubUrl?: string;
   liveUrl?: string;
-  featured?: boolean;
 }
 
 export interface SocialLink {
