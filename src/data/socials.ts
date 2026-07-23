@@ -13,7 +13,8 @@ export const socials: SocialLink[] = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/nihalmaliyekkal/",
     icon: Linkedin,
-    username: "Nihal"
+    username: "Nihal",
+  },
   {
     name: "Email",
     href: `mailto:${personal.email}`,
