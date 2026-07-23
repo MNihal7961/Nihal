@@ -11,10 +11,9 @@ export const socials: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/your-profile",
+    href: "https://www.linkedin.com/in/nihalmaliyekkal/",
     icon: Linkedin,
-    username: "linkedin.com/in/your-profile",
-  },
+    username: "Nihal"
   {
     name: "Email",
     href: `mailto:${personal.email}`,
