@@ -26,7 +26,7 @@ export const personal: Personal = {
 
   avatarUrl: "/profile.jpg",
 
-  resumeUrl: "/resume/M-Nihal-Resume.pdf",
+  resumeUrl: "/resume/MNihal.pdf",
 
   techStackPreview: [
     "React",
