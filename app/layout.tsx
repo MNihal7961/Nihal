@@ -15,20 +15,42 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"], // 🛠 Fix missing subsets
 });
 
+const SITE_URL = "https://nihalm.vercel.app";
+const SITE_TITLE = "Nihal M | Full Stack Software Engineer";
+const SITE_DESCRIPTION =
+  "Portfolio of Nihal M, a full stack software engineer building scalable web applications, SaaS platforms, AI-powered systems, and automation solutions.";
+
 export const metadata: Metadata = {
-  title: "Nihal M | Full Stack Software Engineer",
-  description: "Building scalable web applications, SaaS platforms, AI-powered systems, and automation solutions.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: "%s | Nihal M",
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "Nihal M",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Next.js Developer",
+    "React Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Nihal M", url: SITE_URL }],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Nihal M | Full Stack Software Engineer",
-  description: "Building scalable web applications, SaaS platforms, AI-powered systems, and automation solutions.",
-    url: "https://nihalm.vercel.app/",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     siteName: "Nihal M | Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-   title: "Nihal M | Full Stack Software Engineer",
-  description: "Building scalable web applications, SaaS platforms, AI-powered systems, and automation solutions.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
   },
 };
 
